@@ -1,0 +1,15 @@
+.movie_poster{
+    width: 100%;
+    object-fit: contain;
+    /* background-color: red; */
+    height: 200px;
+    margin-right: 15px;
+    /* transition: transform 450ms; */
+}
+.movie_poster:hover{
+    transform: scale(0.9);
+    transition-delay: 450ms;
+}
+.biggerImage:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,14 @@
+.box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    object-fit: contain;
+    /* flex-direction: row-reverse; */
+}
+
+.text{
+    max-width: 500px;
+    
+}
+.text>h1{font-size: 40px;}

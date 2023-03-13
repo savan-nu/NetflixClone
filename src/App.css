@@ -24,4 +24,7 @@ code {
 .movieRoot{
   margin-top: 70px;
 }
+body{
+  overflow-x: hidden;
+}
 

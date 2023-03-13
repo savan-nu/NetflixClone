@@ -1,0 +1,75 @@
+@keyframes in {
+  0%{
+    background : rgb(48,48,48);
+  }
+  100%{
+    background : gray;
+  }
+}
+@keyframes out {
+    0%{
+        background: gray;
+    }
+    100%{
+        background:  rgb(48,48,48);
+    }
+}
+
+.que{
+    display: flex;
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* border: 1px solid yellow; */
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(48,48,48);
+    cursor: pointer;
+    margin-bottom: 10px;
+    animation-name : out;
+    animation-duration: 0.5s;
+    
+}
+.que:hover{
+    animation-name: in;
+    animation-duration: 0.5s;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    /* max-width: 50%; */
+    width: 100%;
+    padding-left: 10px;
+    justify-items: center;
+    padding-right: 5px;
+
+}
+.question>button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    transition: height 2s ease-in-out;
+}
+.desc{
+    background-color: rgb(48,48,48);
+    width: 60%;
+    /* display: flex; */
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    
+}
+.desc>h2{
+    padding-left: 20px;
+    font-weight: 400;
+}
+.question>h1{
+    padding-left: 31px;
+    padding-right: 58px;
+}

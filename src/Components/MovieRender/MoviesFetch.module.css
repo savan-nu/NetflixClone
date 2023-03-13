@@ -6,6 +6,7 @@
     overflow: hidden;
     overflow-x: scroll;
     padding: 20px;
+    cursor: pointer;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */

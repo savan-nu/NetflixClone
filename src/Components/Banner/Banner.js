@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Banner.module.css";
-import { baseUrl, requests, imageBaseUrl } from "../Data/constant";
+import { baseUrl, requests, imageBaseUrl } from "../../Data/constant";
 
 export default function Banner() {
   const [randomMovie, setrandomMovie] = useState();

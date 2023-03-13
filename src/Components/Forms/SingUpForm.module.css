@@ -1,0 +1,49 @@
+.singUpForm{
+    display: flex;
+    justify-content: center;
+}
+.singUpForm>button{
+    background-color: #e50914;
+   
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    color: #fff;
+    font-size: 38px;
+    border: none;
+    padding-right: 26px;
+    padding-left: 26px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5%;
+    text-align: center;
+}
+.singUpForm>button:hover{
+    background-color:#91040b ;
+    
+    /* transform: scale(1.1); */
+}
+.singUpForm>input{
+    height: 60px;
+    width: 450px;
+   outline: none;
+   font-size: 16px; 
+   font-weight: 800;
+   background-color: black;
+   opacity: 0.6;
+   margin-right: 12px;
+   border-radius: 4%;
+   color: white;
+
+}
+.singUpForm>input::placeholder{
+    padding-left: 10px;
+}
+.singUpForm>input:focus{
+    transform: scale(1.02);
+   
+}
+.singUpForm>input:focus::placeholder{
+    transform: translateY(-20px);
+    font-size: 12px;
+    padding-left: 0;
+    opacity: 0.5;
+}

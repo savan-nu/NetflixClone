@@ -1,5 +1,5 @@
 import React from "react";
-import { imageBaseUrl } from "../Data/constant";
+import { imageBaseUrl } from "../../Data/constant";
 import classes from "./Render.module.css";
 function RenderMovies({ movie, heightImage, handleOnclick }) {
   //   console.log(movie);

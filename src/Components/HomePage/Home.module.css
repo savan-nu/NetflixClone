@@ -1,3 +1,15 @@
 body{
     background-color: black ;
 }
+.movies{
+    animation-name: delay;
+    animation-duration: 1.5s;
+}
+@keyframes delay {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

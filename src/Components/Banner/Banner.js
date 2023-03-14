@@ -40,7 +40,7 @@ export default function Banner() {
         </div>
         <h4 className={classes.bannner_desc}>{randomMovie?.overview}</h4>
       </div>
-      <div className={classes.footer}></div>
+     
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./SingUpForm.module.css";
+import classes from "./SignUpForm.module.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 export default function SingUpForm() {
@@ -19,12 +19,10 @@ export default function SingUpForm() {
     getUsers();
   },[]);
   const handleSubmit = (event) => {
-    // console.log(event);
+    
     event.preventDefault();
-    if(allEmail.includes(email)){
-    // console.log(event);
-      nevigate("/movie");
-    }
+    
+    nevigate("/signup",{replace : true});
     
   };
   const handlechange = (event) => {

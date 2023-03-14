@@ -52,6 +52,8 @@
     padding-left: 10px;
     justify-items: center;
     padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 .question>button {
@@ -83,4 +85,6 @@
 .question>h1{
     padding-left: 31px;
     padding-right: 58px;
+    font-size: 36px;
+    font-weight: 400 !important;
 }

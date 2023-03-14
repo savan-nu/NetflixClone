@@ -1,0 +1,79 @@
+.bg {
+  background-color: #777676;
+  width: 100%;
+  /* height: 100vh; */
+  
+}
+.signUpDetails {
+  position: absolute;
+  top: 16%;
+  color: white;
+  left: 25%;
+  z-index: 2;
+  background-color: black;
+  width: 40%;
+  padding: 50px;
+}
+.signUpDetails > h1 {
+  margin-left: 70px;
+}
+.singUpDetailForm {
+  justify-content: center;
+}
+.singUpDetailForm > button {
+  background-color: #e50914;
+
+  box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding-right: 10px;
+  padding-left: 26px;
+  cursor: pointer;
+  font-weight: 400;
+  height: 50px;
+  text-align: center;
+  width: 71%;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.singUpDetailForm > button:hover {
+  background-color: #91040b;
+}
+.singUpDetailForm > input {
+  height: 50px;
+  width: 70%;
+
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #595656;
+  margin-left: 70px;
+
+  /* border-radius: 4%; */
+  color: white;
+  margin-bottom: 10px;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.singUpDetailForm > input::placeholder {
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+.singUpDetailForm > input:focus::placeholder {
+  transform: translateY(-5px);
+  font-size: 8px;
+  padding-left: 0;
+  opacity: 0.5;
+}
+.overflowHandle{
+  overflow: hidden;
+  height: 100%;
+}
+.blur{
+  opacity: 0.5;
+  max-height: 100vh;
+}

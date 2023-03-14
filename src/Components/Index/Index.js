@@ -1,16 +1,23 @@
 import React from "react";
 import classes from "./Index.module.css";
+
 import Nav from "../Navbar/Nav";
 import Divider from "../Divider/Divider";
 import Promotion from "../Promotion/Promotion";
-import SingUpForm from "../Forms/SingUpForm";
+import SingUpForm from "../Forms/SignUp/SignUpForm";
 import FAQ from "../Quetion/FAQ";
 import FooterPage from "../Footer/FooterPage";
 import { Promotions } from "../../Data/promotions";
+
+
 export default function Index() {
+
+ 
   return (
     <div>
-      <Nav />
+      
+   
+      <Nav isSign = {true}/>
 
       <div className={classes.highlights}>
         <div className={classes.header}></div>

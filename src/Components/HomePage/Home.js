@@ -1,15 +1,15 @@
 import React from "react";
 import "../../App.css"
-import "./Home.module.css"
+import classes from "./Home.module.css"
 import MoviesFetch from "../MovieRender/MoviesFetch";
 import Nav from "../Navbar/Nav";
 import Banner from "../Banner/Banner";
 import { Movies } from "../../Data/movies";
 function Home() {
   return (
-    <div>
+    <div className={classes.movies}>
       <Nav />
-      <div className="movieRoot theam">
+      <div className="movieRoot">
         <Banner />
       </div>
       <div>

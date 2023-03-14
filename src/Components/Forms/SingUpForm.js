@@ -1,24 +1,44 @@
 import React from "react";
 import classes from "./SingUpForm.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 export default function SingUpForm() {
-    const nevigate = useNavigate();
-const [email, setEmail] = useState("");
+  const nevigate = useNavigate();
+  
+  const [email, setEmail] = useState("");
+  const [allEmail , setAllEmail] = useState([]);
+  useEffect(() => {
+    const getUsers = async () => {
+        const res = await fetch("https://dummyjson.com/users");
+        const data = await res.json();
+        console.log(data.users);
+        const emails = data.users.map(user => user.email)
+        setAllEmail(emails);
+    }
+
+    getUsers();
+  },[]);
   const handleSubmit = (event) => {
     // console.log(event);
     event.preventDefault();
-    
+    if(allEmail.includes(email)){
     // console.log(event);
-    nevigate("/movie");
+      nevigate("/movie");
+    }
+    
   };
   const handlechange = (event) => {
-    
-        setEmail(event.target.value)
-  }
+    setEmail(event.target.value);
+  };
   return (
     <form className={classes.singUpForm} onSubmit={handleSubmit}>
-      <input placeholder="Email Address" type="text" onChange={handlechange} required title="Please Enter the email"/>
+      <input
+        placeholder="Email Address"
+        type="text"
+        onChange={handlechange}
+        required
+        title="Please Enter the email"
+      />
       <button> Let's Start </button>
     </form>
   );

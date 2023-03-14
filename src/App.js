@@ -1,25 +1,21 @@
 import "./App.css";
 
-import { MovieIdProvider } from "./Components/context";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/HomePage/Home";
 import Index from './Components/Index/Index';
-
+import SingIn from "./Components/Forms/SingIn"
 function App() {
   
 
   return (
-
-    <MovieIdProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/movie" element = { <Home/> } />
         <Route path="/" element = {<Index /> } />
+        <Route path="/signin" element = {<SingIn />} />
       </Routes>
     </BrowserRouter>
-     
-    </MovieIdProvider>
-   
   );
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
 import { baseUrl } from "../../Data/constant";
-import { useEffect, useState,useContext } from "react";
+import { useEffect, useState} from "react";
 import RenderMovies from "./RenderMovies";
 import YouTube from "react-youtube"
 import classes from "./MoviesFetch.module.css";
 import movieTrailer from "movie-trailer";
 import {FaWindowClose} from "react-icons/fa"
-import { movieContext } from '../context';
+
 
 export default function MoviesFetch({
   title,
@@ -18,7 +18,7 @@ export default function MoviesFetch({
   const [movieNames, setmovieNames] = useState([]);
   const [movieID, setmovieID] = useState();
   const [isNullUrl , setIsNullUrl] = useState(false);
-  const useMovieContext = useContext(movieContext);
+
   
   // console.log(useMovieContext.movieID);
   // console.log(useMovieContext.setmovieID)

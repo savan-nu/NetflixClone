@@ -27,18 +27,18 @@ export default function Banner() {
         objectFit: "contain",
       }}
     >
-      <div className={classes.banner_contents}>
-        <h1 className={classes.banner_tittle}>
+      <div className={classes.bannerContents}>
+        <h1 className={classes.bannerTittle}>
           {" "}
           {randomMovie?.name ||
             randomMovie?.original_title ||
             randomMovie?.original_title}
         </h1>
         <div>
-          <button className={classes.banner_button}>Play</button>
+          <button className={classes.bannerButton}>Play</button>
          
         </div>
-        <h4 className={classes.bannner_desc}>{randomMovie?.overview}</h4>
+        <h4 className={classes.bannnerDesc}>{randomMovie?.overview}</h4>
       </div>
      
     </div>

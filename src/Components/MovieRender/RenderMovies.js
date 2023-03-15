@@ -10,7 +10,7 @@ function RenderMovies({ movie, heightImage, handleOnclick }) {
     <>
       <img
         style={{ height: heightImage ? "300px" : "200px" }}
-        className={`${classes.movie_poster} ${
+        className={`${classes.moviePoster} ${
           heightImage ? classes.biggerImage : ""
         }`}
         src={`${url}${heightImage ? movie.poster_path : movie.backdrop_path}`}

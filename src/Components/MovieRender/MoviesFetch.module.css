@@ -1,7 +1,7 @@
 .row{
     margin-left: 25px;
 }
-.movie_posters{
+.moviePosters{
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
@@ -19,7 +19,7 @@
     border: 5px solid rgb(159, 46, 46);
     display: flex
 }
-.movie_button{
+.movieButton{
     cursor: pointer;
     color: white;
     outline: none;

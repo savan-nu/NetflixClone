@@ -1,22 +1,16 @@
 import React from "react";
 import classes from "./SignUpForm.module.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect ,useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import AuthContext from '../../../Context/AuthContext';
 export default function SingUpForm() {
   const nevigate = useNavigate();
-  
+  const {isLogin, setIsLogin} = useContext(AuthContext);
   const [email, setEmail] = useState("");
-  const [allEmail , setAllEmail] = useState([]);
   useEffect(() => {
-    const getUsers = async () => {
-        const res = await fetch("https://dummyjson.com/users");
-        const data = await res.json();
-        console.log(data.users);
-        const emails = data.users.map(user => user.email)
-        setAllEmail(emails);
-    }
-
-    getUsers();
+     
+    setIsLogin(false);
+    
   },[]);
   const handleSubmit = (event) => {
     

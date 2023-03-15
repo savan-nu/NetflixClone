@@ -1,4 +1,4 @@
-.movie_poster{
+.moviePoster{
     width: 100%;
     object-fit: contain;
     /* background-color: red; */
@@ -6,7 +6,7 @@
     margin-right: 15px;
     /* transition: transform 450ms; */
 }
-.movie_poster:hover{
+.moviePoster:hover{
     transform: scale(0.9);
     transition-delay: 450ms;
 }

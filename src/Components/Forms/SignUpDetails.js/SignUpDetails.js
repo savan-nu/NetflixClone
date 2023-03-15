@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./SignUpDetails.module.css";
 import { useNavigate } from "react-router-dom";
+import Alert from '../../Alert/Alert';
 export default function SignUpDetails() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -48,15 +49,14 @@ export default function SignUpDetails() {
   const handlechangeConformPassword = (event) => {
     setconformPassword(event.target.value);
   };
+  const handleClick = () => {
+    console.log("Click");
+    setIsalert(false);
+  }
   return (
     <div className={classes.overflowHandle}>
       {isalert && (
-        <div className="alert alert-danger alert-dismissible alert-boxs">
-          <button type="button" class="close" data-dismiss="alert">
-            &times;
-          </button>
-          <strong>SignUp Faild !! </strong> Email is already register
-        </div>
+        <Alert setIsalert = {setIsalert} failed = "SignUp Faild !!" failedMessage="Email is already register"/>
       )}
       <img
         src="https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/eb90437e-a876-47c3-a138-ca27772a4d2a/IN-en-20230306-popsignuptwoweeks-perspective_alpha_website_large.jpg"

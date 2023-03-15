@@ -4,11 +4,11 @@ import classes from "./Footer.module.css";
 export default function FooterPage() {
   return (
     <footer>
-      <div className={classes.footer__title}>
+      <div className={classes.footerTitle}>
         <p>Questions? Call  000 - 000 - 0000</p>
       </div>
-      <div className={classes.footer__columns}>
-        <div className="footer__column">
+      <div className={classes.footerColumns}>
+        <div className={classes.footerColum}>
           <ul>
             <li>FAQ</li>
             <li>Account</li>
@@ -22,7 +22,7 @@ export default function FooterPage() {
             <li>Netflix India</li>
           </ul>
         </div>
-        <div className="footer__column">
+        <div className={classes.footerColumn}>
           <ul>
             <li>Gift Card Terms</li>
             <li>Media Centre</li>
@@ -31,7 +31,7 @@ export default function FooterPage() {
             <li>Speed Test</li>
           </ul>
         </div>
-        <div className="footer__column">
+        <div className={classes.footerColumn}>
           <ul>
             <li>Help Centre</li>
             <li>Investor Relations</li>

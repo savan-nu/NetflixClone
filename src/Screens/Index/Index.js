@@ -1,18 +1,18 @@
 import React from "react";
 import classes from "./Index.module.css";
 
-import Nav from "../Navbar/Nav";
-import Divider from "../Divider/Divider";
-import Promotion from "../Promotion/Promotion";
+import Nav from "../../Components/Navbar/Nav";
+import Divider from "../../Components/Divider/Divider";
+import Promotion from "../../Components/Promotion/Promotion";
 import SingUpForm from "../Forms/SignUp/SignUpForm";
-import FAQ from "../Quetion/FAQ";
-import FooterPage from "../Footer/FooterPage";
+import FAQ from "../../Components/Quetion/FAQ";
+import FooterPage from "../../Components/Footer/FooterPage";
 import { Promotions } from "../../Data/promotions";
 
 
-export default function Index() {
-
+export default function Index(props) {
  
+  
   return (
     <div>
       

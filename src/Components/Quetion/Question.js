@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+
 import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import classes from "./Quetion.module.css";
 import { CSSTransition } from "react-transition-group";
@@ -12,7 +12,6 @@ export default function Question({
   isOpen,
   onClick,
 }) {
-  const [isViewed, setisViewed] = useState(false);
   console.log(isOpen);
   // const handleClick = () => {
   //    onClick(qkey) ;

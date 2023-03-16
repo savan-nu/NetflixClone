@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./SignUpDetails.module.css";
 import { useNavigate } from "react-router-dom";
-import Alert from '../../Alert/Alert';
+import Alert from "../../../Components/Alert/Alert";
 export default function SignUpDetails() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -49,10 +49,7 @@ export default function SignUpDetails() {
   const handlechangeConformPassword = (event) => {
     setconformPassword(event.target.value);
   };
-  const handleClick = () => {
-    console.log("Click");
-    setIsalert(false);
-  }
+ 
   return (
     <div className={classes.overflowHandle}>
       {isalert && (

@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import classes from "./SignIn.module.css";
 import "./SignIn.module.css";
-import Alert from "../../Alert/Alert";
+import Alert from "../../../Components/Alert/Alert";
 import AuthContext from '../../../Context/AuthContext';
 
 export default function SingIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isalert, setIsalert] = useState("");
-  const {isLogin, setIsLogin} = useContext(AuthContext);
+  const {setIsLogin} = useContext(AuthContext);
   const nevigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -44,9 +44,7 @@ export default function SingIn() {
   const handlechangePassword = (event) => {
     setPassword(event.target.value);
   };
-  const handleClick = () => {
-    setIsalert(false);
-  };
+  
   return (
     <>
       {isalert && <Alert setIsalert={setIsalert} failed = "Sign Failed !!" failedMessage = "Please Register First" />}
